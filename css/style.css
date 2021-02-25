@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../img/imagen.jpeg);
+   
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  
+}
+
+.container {
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.chatbox {
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 20px;
+    background: #8BBEF1;
+    border-radius: 10px;
+}
+
+.header {
+    background:#436F9C;
+    padding: 20px;
+    color: #F4F6F7;
+    font-size: 15px;
+}
+
+.avail {
+    font-size: 12px;
+    padding: 0 20px;
+    padding-right: 30px;
+}
+
+.avail::after {
+    content: "";
+    display: inline-block;
+    background: rgb(4, 180, 4);
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.body {
+    background: #8EB7E1;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+}
+
+input[type="text"] {
+    padding: 0 10px;
+}
+
+input[type="submit"] {
+    height: 25px;
+    border: 0;
+    background:#436F9C;
+    font-weight: 500;
+    font-size: 17px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.visible {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.me {
+    color:  #173452;
+    font-family: cursive;
+    width: 55%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    background-color:#AEBCC9;
+    border-radius: 10px;
+    float: right;
+    text-align: right;
+    display: block;
+}
+
+.alicia {
+    color: #173452;
+    font-family: cursive;
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    background-color: #C4D2E0;
+    border-radius: 10px;
+    float: left;
+    text-align: left;
+    display: block;
+}
+
+.imgRedonda {
+    width: 40px;
+    height: 40px;
+    border-radius: 150px;
+}
+
+.creador {
+    background-color: #6FA3D7;
+    color: #AEBCC9;
+    font-size: 16px;
+    height: 20px;
+    width: 80px
+}
