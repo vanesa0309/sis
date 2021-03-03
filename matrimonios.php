@@ -160,13 +160,15 @@ include('conexion.php');
             const x = new Date();
 
             var day = x.getDate();
+            if ( day >= 1 && day <= 9 ) {
+                day = '0' + day;   
+            }
             var month = x.getMonth() + 1;
             if (month >= 1 && month <= 9 ) {
                 month = '0' + month;
             }
             var year = x.getFullYear();
             const today = year + '-' + month + '-' + day;
-
 
             $(document).ready(function () {
                 $(date).prop( "min", today );
